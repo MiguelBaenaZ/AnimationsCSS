@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TRANSFORMACION</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: blue;     
+        }
+        .conteiner{
+            border: 1px solid rebeccapurple;
+        }
+        .conteiner:hover .cuadrado{
+            /*transform: scale(2,.5);*/
+            transform: scale(.9);
+            border-radius: 10%;
+            transform: rotate(360deg) scale(.9); 
+        }
+        .cuadrado{
+            width: 200px;
+            height: 100px;
+            background: rgb(5, 233, 62);
+            /*margin: 20px;*/
+            transition: 400ms 50ms ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="cuadrado">mensaje</div>
+    </div>
+</body>
+</html>

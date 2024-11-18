@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="lrt">
+    <head>
+        <meta charset="utf-8">
+        <title>animaciones</title>
+        <style>
+        .pelota {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: blue;
+            transition-property: width, height; /* se puede comentar y se animara tambien */
+            transition-duration: 1s;
+            transition-delay: 50ms; /* se comenta tambien y funcinara igual */
+            transition-timing-function: normal;
+            /*transition: width 1s 1s ease;*/ /*tamaño animar retraso timing*/
+        }
+        .pelota:hover {
+            width: 200px;
+            height: 200px; 
+        }  
+            </style>        
+    </head>
+    <body>
+        <div class="pelota b"></div>
+    </body>
+</html>
